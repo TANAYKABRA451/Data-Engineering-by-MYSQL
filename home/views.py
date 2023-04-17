@@ -51,7 +51,7 @@ def Signup(request):
                 my_user.save()
                 # sending mail to user
                 subject = "About Registration"
-                message = f'Hi {user_name},\n\nThank you for registering with us.\n\nRegards,\nTeam Data Engineering'
+                message = f'Hi {user_name},\n\nThank you for registering with us.\n\nRegards,\nTeam Data Engineering...'
                 email_from = 'rishabhmalakar27@gmail.com'
                 recipient_list = [email,]
                 send_mail( subject, message, email_from, recipient_list )
